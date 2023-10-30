@@ -6,7 +6,7 @@ import ToggleFont from "./ToggleFont";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="w-full">
       <ul className="flex flex-row gap-2 min-w-2xl navbar">
         <li className="w-8">
           <FontAwesomeIcon icon={faBook} />
