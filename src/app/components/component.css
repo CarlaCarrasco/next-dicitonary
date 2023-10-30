@@ -1,0 +1,9 @@
+.navbar {
+  width: 80vw;
+}
+
+@media (min-width: 820px) {
+  .navbar {
+    width: 65vw;
+  }
+}
