@@ -27,6 +27,14 @@ body {
   background: #fff;
 }
 
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sans-serif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #main {
   width: 80vw;
   margin: auto;
