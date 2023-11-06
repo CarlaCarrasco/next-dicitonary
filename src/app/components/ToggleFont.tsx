@@ -3,10 +3,9 @@ import { useContext } from "react";
 import { ThemeContext } from "../ThemeProvider";
 const ToggleFont = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-  console.log(theme);
   const updateFont = (font: string) => {
     console.log({ font });
-    setTheme({ mode: theme.mode, fontFamily: font });
+    setTheme({ ...theme, fontFamily: font });
   };
   return (
     <>
