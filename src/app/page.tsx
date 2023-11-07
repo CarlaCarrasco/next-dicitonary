@@ -1,6 +1,7 @@
 "use client";
 import { useContext } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Link from "next/link";
 import Description from "./components/Description";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
@@ -26,7 +27,7 @@ export default function Home() {
         <Navbar />
         <SearchBar />
         <Description />
-        <h1>Dictionary App</h1>
+        <Link href="about">About the dictionary app</Link>
       </main>
     </QueryClientProvider>
   );
