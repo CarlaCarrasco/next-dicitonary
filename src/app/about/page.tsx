@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import "../app/globals.css";
-const About = () => {
+import "@/app/globals.css";
+const AboutPage = () => {
   return (
     <main
       id="main"
@@ -41,4 +41,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

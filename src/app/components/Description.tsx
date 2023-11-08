@@ -1,3 +1,4 @@
+"use client";
 import "./component.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
