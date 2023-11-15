@@ -3,15 +3,12 @@ import "./component.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { useQuery } from "@tanstack/react-query";
-import { useContext } from "react";
-import { ThemeContext } from "../ThemeProvider";
 import fetchDefinition from "../fetchDefinition";
 
-const Description = () => {
-  const { theme } = useContext(ThemeContext);
+const Description = ({ word }: { word: string }) => {
   const { isPending, data } = useQuery({
-    queryKey: ["def", theme.word],
-    queryFn: () => fetchDefinition(theme.word),
+    queryKey: ["def", word],
+    queryFn: () => fetchDefinition(word),
   });
   if (isPending) {
     return <div>Loading...</div>;

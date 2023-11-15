@@ -3,10 +3,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import "@/app/globals.css";
 const AboutPage = () => {
   return (
-    <main
-      id="main"
-      className="flex flex-col gap-10 items-center justify-center min-h-screen"
-    >
+    <div className="flex flex-col gap-10 items-center justify-center mt-24">
       <h1 className="text-4xl">About Page</h1>
       <p className="text-xl">
         Here are some fun facts about the Dictionary app.
@@ -37,7 +34,7 @@ const AboutPage = () => {
           FontAwesome for the awesome fonts
         </li>
       </ul>
-    </main>
+    </div>
   );
 };
 
