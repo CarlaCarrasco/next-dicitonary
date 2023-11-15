@@ -1,4 +1,5 @@
 import "./component.css";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import ToggleTheme from "./ToggleTheme";
@@ -9,7 +10,9 @@ const Navbar = () => {
     <nav className="w-full">
       <ul className="flex flex-row gap-2 min-w-2xl navbar items-center">
         <li className="w-8 h-auto">
-          <FontAwesomeIcon icon={faBook} size="2x" />
+          <Link href="/">
+            <FontAwesomeIcon icon={faBook} size="2x" />
+          </Link>
         </li>
         <li className="ml-auto">
           <ToggleFont />
