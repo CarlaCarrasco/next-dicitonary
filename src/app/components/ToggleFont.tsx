@@ -9,7 +9,10 @@ const ToggleFont = () => {
   };
   return (
     <>
-      <select className="text-2xl" onChange={(e) => updateFont(e.target.value)}>
+      <select
+        className="text-2xl text-black"
+        onChange={(e) => updateFont(e.target.value)}
+      >
         <option value="san-serif" className="text-2lg">
           San-serif
         </option>

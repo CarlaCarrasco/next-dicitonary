@@ -14,12 +14,14 @@ const Main = ({ children }) => {
   });
   return (
     <QueryClientProvider client={queryClient}>
-      <main
-        id="main"
-        className={`flex min-h-screen flex-col items-center p-24 ${theme.fontFamily}`}
-      >
-        {children}
-      </main>
+      <body className={`${theme.mode}`}>
+        <main
+          id="main"
+          className={`flex min-h-screen flex-col items-center p-24 ${theme.fontFamily}`}
+        >
+          {children}
+        </main>
+      </body>
     </QueryClientProvider>
   );
 };

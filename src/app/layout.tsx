@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "./ThemeProvider";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dictionary App",
@@ -19,14 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider>
-          <Main>
-            <Navbar />
-            {children}
-          </Main>
-        </ThemeProvider>
-      </body>
+      <ThemeProvider>
+        <Main>
+          <Navbar />
+          {children}
+        </Main>
+      </ThemeProvider>
     </html>
   );
 }
