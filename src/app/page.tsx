@@ -13,8 +13,11 @@ export default function Home() {
     <>
       <SearchBar />
       <Description word={theme.word} />
-      <Link className="mt-auto" href="/about">
-        About the dictionary app
+      <Link
+        className="mt-auto underline underline-offset-4 text-purple-700"
+        href="/about"
+      >
+        About this dictionary app
       </Link>
     </>
   );

@@ -44,3 +44,9 @@
     width: 65vw;
   }
 }
+
+#about a {
+  color: rgb(126, 34, 206);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
