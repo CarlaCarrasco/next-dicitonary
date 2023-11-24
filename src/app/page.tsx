@@ -13,7 +13,9 @@ export default function Home() {
     <>
       <SearchBar />
       <Description word={theme.word} />
-      <Link href="/about">About the dictionary app</Link>
+      <Link className="mt-auto" href="/about">
+        About the dictionary app
+      </Link>
     </>
   );
 }

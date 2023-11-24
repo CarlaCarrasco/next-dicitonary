@@ -17,7 +17,7 @@ const Main = ({ children }) => {
       <body className={`${theme.mode}`}>
         <main
           id="main"
-          className={`flex min-h-screen flex-col items-center p-24 ${theme.fontFamily}`}
+          className={`flex min-h-screen flex-col items-center sm:py-8 lg:px-24 ${theme.fontFamily}`}
         >
           {children}
         </main>
