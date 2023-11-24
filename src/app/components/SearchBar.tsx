@@ -13,7 +13,7 @@ const SearchBar = () => {
   return (
     <div className="flex w-full mb-2 bg-slate-100 p-3 my-12">
       <input
-        className="font-bold text-2xl w-full p-2 outline-none border-none bg-slate-100"
+        className="font-bold text-2xl text-purple-700 w-full p-2 outline-none border-none bg-slate-100"
         type="text"
         placeholder="Search a word..."
         onKeyDown={(e) => {

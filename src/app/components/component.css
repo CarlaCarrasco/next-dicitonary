@@ -17,3 +17,7 @@ ul.meaning li::before {
   font-weight: bold; /* If you want it to be bold */
   margin-right: 8px;
 }
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(233 213 255);
+}
